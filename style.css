@@ -1,16 +1,22 @@
+/* header section */
 .banner_style{
     max-height: 500px;
     width: 100%;
     filter: brightness(50%);
 }
 
+/* card section */
+.hightlight_card{
+    transform: scaley(1.1);
 
+}
+
+i.far.fa-check-circle {
+    margin-top: -10px;
+}
 
 .custom_button button{
     background-color: #ffe9f5;
     padding:0.90rem 2rem;
     border: none;   
 }
-/* .hot_card_custom{
-    margin-top: -28px;
-} */

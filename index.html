@@ -13,14 +13,23 @@
     <!-- stylesheet link -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- fontawesomelink -->
+    <script src="https://kit.fontawesome.com/3682c7ff33.js" crossorigin="anonymous"></script>
+
+    <!-- jquery link -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
 </head>
 
 <body>
+
+
     <header class="mb-5">
         <!-- navbar start -->
         <nav class="container navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Santa Clara Convention Center</a>
+                <a class="navbar-brand" href="#">SK Convention Center</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,10 +37,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">About Us</a>
-                        <a class="nav-link" href="#">Contact</a>
-                        <a class="nav-link" href="#">Subscribe</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#explore">Explore Us</a>
+                        <a class="nav-link" href="#package">Package</a>
+                        <a class="nav-link" href="#client">Client</a>
+                        <a class="nav-link" href="#questions">Questions</a>
+
                     </div>
                 </div>
             </div>
@@ -56,22 +67,22 @@
                 <div class="carousel-item active">
                     <img class="banner_style" src="images/banner1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Welocme Our Paradise</h5>
+                        <p>We are very pleasure to you. You can booking our slot and enjoy happy moment.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="banner_style" src="/images/banner2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>20% Discount available</h5>
+                        <p>Huurah! you can get 20% disconut. Book now.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="banner_style" src="/images/banner3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>Keep your moment enjoyble</h5>
+                        <p>You will get super service from our center</p>
                     </div>
                 </div>
             </div>
@@ -91,11 +102,36 @@
         ---------- -->
     </header>
 
-    <main>
+    <main class="display-relative">
+        <!-- toast -->
+        <div class="d-flex justify-content-end ">
+            <div class=" position-absolute">
+                <div class="toast" data-autohide="true" style="max-width: 290px; max-height: 100px;">
+                    <div class="toast-header">
+                        <strong class="mr-auto text-primary">Toast Header</strong>
+                        <small class="text-muted">5 mins ago</small>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                    </div>
+                    <div class="toast-body">
+                        Some text inside the toast body
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.toast').toast('show');
+                    });
+                </script>
+            </div>
+        </div>
+
+        <!-- toast end -->
+
+
+
         <!-- every moment -->
-        <section class="container h-100 mb-5">
+        <section id="explore" class="container h-100 mb-5">
             <div class="row h-100">
-                <div class="col-lg-6 col-md-6 col-12 order-last">
+                <div class="col-lg-6 col-md-6 col-12 order-last order-lg-first order-md-first">
                     <div class="mt-3">
                         <img width="80%" src="images/weedingphoto.jpg" alt="weeding photo">
                     </div>
@@ -122,26 +158,38 @@
         </section>
 
         <!-- our package start -->
-        <section class="container mb-3">
+        <section id="package" class="container mb-3">
             <h3 class="text-center mb-5">Our package</h3>
-            <div class="container mt-2">
-                <div class="row gx-4 gy-4">
+            <div class="container mt-2 display-relative">
+                <div class="row gx-4 gy-5">
                     <div class="col-lg-3 col-md-6 col-12 ">
-                        <div class="p-3 rounded shadow lh-lg">
-                            <h3 class="fw-bold ">$300</h3>
+                        <div class="p-3 rounded shadow">
+                            <h3 class="fw-bold">$300</h3>
                             <h4 class="fw-bold">Business fair</h4>
-                            <p>For most businesses event
+                            <p class="">For most businesses event
                                 like book fair, craft fair.</p>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
 
-                            <!-- <div class="custom_button mt-3 text-center">
-                            <a class="fw-bold rounded-pill text-primary text-decoration-none" href="">Choose
-                                Plan</a>
-                                 </div> -->
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+
                             <div class="custom_button">
                                 <button class=" mt-3 fw-bold rounded-pill text-primary">
                                     Choose Plan
@@ -151,21 +199,33 @@
 
                     </div>
                     <div class="col-lg-3 col-md-6 col-12  ">
-                        <div class=" p-3 rounded shadow lh-lg">
-                            <h3 class="fw-bold ">$300</h3>
+                        <div class="p-3 rounded shadow">
+                            <h3 class="fw-bold">$300</h3>
                             <h4 class="fw-bold">Business fair</h4>
-                            <p>For most businesses event
+                            <p class="lh">For most businesses event
                                 like book fair, craft fair.</p>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
 
-                            <!-- <div class="custom_button mt-3 text-center">
-                            <a class="fw-bold rounded-pill text-primary text-decoration-none" href="">Choose
-                                Plan</a>
-                                 </div> -->
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+
                             <div class="custom_button">
                                 <button class=" mt-3 fw-bold rounded-pill text-primary">
                                     Choose Plan
@@ -176,7 +236,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-12 ">
                         <div
-                            class="bg-primary bg-gradient rounded lh-lg text-dark p-3 position-relative hot_card_custom shadow-lg ">
+                            class="bg-primary bg-gradient rounded  text-white p-3 position-relative hot_card_custom shadow-lg hightlight_card">
                             <p
                                 class="bg-danger d-inline-block rounded-pill py-1 px-2 position-absolute top-0 start-100 translate-middle">
                                 Hot</p>
@@ -184,18 +244,29 @@
                             <h4 class="fw-bold">Business fair</h4>
                             <p>For most businesses event
                                 like book fair, craft fair.</p>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
 
-                            <!-- <div style="background-color: white; padding:0.90rem 2.5rem;"
-                            class=" mt-3 text-center rounded-pill">
-                            <a class="fw-bold text-dark text-decoration-none" href="">Choose
-                                Plan</a>
-                        </div> -->
-                            <div class="">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+
+                            <div>
                                 <button class="btn btn-light mt-3 fw-bold rounded-pill text-dark"
                                     style="padding:0.90rem 2rem;">
                                     Choose Plan
@@ -205,21 +276,33 @@
 
                     </div>
                     <div class="col-lg-3 col-md-6 col-12 ">
-                        <div class="p-3 rounded lh-lg shadow">
+                        <div class="p-3 rounded shadow">
                             <h3 class="fw-bold ">$300</h3>
                             <h4 class="fw-bold">Business fair</h4>
                             <p>For most businesses event
                                 like book fair, craft fair.</p>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
-                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
 
-                            <!-- <div class="custom_button mt-3 text-center">
-                            <a class="fw-bold rounded-pill text-primary text-decoration-none" href="">Choose
-                                Plan</a>
-                                 </div> -->
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-around">
+                                <i class="far fa-check-circle"></i>
+                                <p class="">limited space access</p>
+                            </div>
+
                             <div class="custom_button">
                                 <button class=" mt-3 fw-bold rounded-pill text-primary">
                                     Choose Plan
@@ -231,11 +314,10 @@
                 </div>
             </div>
         </section>
-
-        <!-- price section end -->
+        <!-- our package end -->
 
         <!-- happy client section -->
-        <section class="mt-5">
+        <section id="client" class="mt-5">
             <div class="container">
                 <h3 class="text-center">Happy Clients says</h3>
                 <div class="row gx-4 gy-4 mt-5">
@@ -291,7 +373,7 @@
         <!-- frequnet question section -->
         <section class="mt-5 mb-5">
             <h3 class="text-center mb-5">Frequently Asked Questions</h3>
-            <div class="container h-100">
+            <div id="questions" class="container h-100">
 
                 <div class="row h-100">
                     <div class="col-lg-6 col-md-6 col-12 order-last">
@@ -446,6 +528,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
 
 </html>
+
+
+
+<!-- <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
+                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
+                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
+                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> <br>
+                            <input type="checkbox" id="check1"> <label for="check1">limited space access</label> -->
+
+<!-- <div class="custom_button mt-3 text-center">
+                            <a class="fw-bold rounded-pill text-primary text-decoration-none" href="">Choose
+                                Plan</a>
+                                 </div> -->
