@@ -1,4 +1,9 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 /* header section */
+
 .banner_style{
     max-height: 500px;
     width: 100%;
@@ -7,7 +12,7 @@
 
 /* card section */
 .hightlight_card{
-    transform: scaley(1.1);
+    transform: scaley(1.15);
 
 }
 
@@ -16,7 +21,46 @@ i.far.fa-check-circle {
 }
 
 .custom_button button{
-    background-color: #ffe9f5;
+    background-color: rgb(238, 152, 166);
     padding:0.90rem 2rem;
     border: none;   
 }
+
+.foods_container{
+    position: relative;
+    width: 100%;
+}
+.food-image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.menu{
+    transition: .5s ease;
+    opacity:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,50%);
+    text-align: center;
+}
+.foods_container:hover .food-image{
+    filter: brightness(80%);
+    
+}
+.foods_container:hover .menu{
+    opacity: 1;
+}
+.text{
+    color: white;
+    font-size: 16px;
+    background-color: black;
+    padding: 16px 32px;
+
+
+}
+
