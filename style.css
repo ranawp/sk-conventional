@@ -2,7 +2,7 @@
 
 h3{
 font-family: 'Raleway' ;
-font-weight: 700;
+font-weight: 500;
 }
 
 
@@ -31,7 +31,7 @@ html {
 
 /* card section */
 .hightlight_card{
-    transform: scaley(1.15);
+    transform: scaley(1.20);
 
 }
 
@@ -41,7 +41,7 @@ i.far.fa-check-circle {
 
 .custom_button button{
     background-color: rgb(238, 152, 166);
-    padding:0.90rem 2rem;
+    padding:15px;
     border: none;   
 }
 
